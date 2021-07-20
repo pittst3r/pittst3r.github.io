@@ -1,0 +1,41 @@
+name: Build to branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Push
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - uses: actions-rs/cargo@v1
+        with:
+          command: install
+          args: --git https://github.com/pittst3r/distillate.git
+
+      - name: Build
+        run: distillate build
+
+      - name: Publish
+        run: |
+          git config --global user.name '${{ github.actor }}'
+          git config --global user.email 'your-username@users.noreply.github.com'
+          git add dist
+          git stash -- dist
+          git fetch origin rendered
+          git checkout rendered
+          git stash pop
+          mv dist/* .
+          rm -rf dist
+          git add -A
+          git commit -m "Publish ${{ github.sha }}"
+          git push origin rendered:rendered
