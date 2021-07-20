@@ -12,9 +12,9 @@ We would be better served, both personally and organizationally, by awareness of
 
 ---
 
-[^eristic-argument]: Walton, D. N., & Krabbe, E. C. W. (1995). Commitment in dialogue: Basic concepts of interpersonal reasoning. State University of New York Press.
+[^eristic-argument]: Walton, D. N.; Krabbe, E. C. W. 1995. *Commitment in Dialogue: Basic Concepts of Interpersonal Reasoning*. State University of New York Press.
 
-[^workplace-meeting-dialogue]: Cionea, Ioana A.; Kavya, Pavitra; Wyant, Mizuki H. (11 November 2020). "Dialogue Orientations in Workplace Meetings". 
-Management Communication Quarterly. 35 (2): 315–331. [doi:10.1177/0893318920970542](https://sci-hub.se/10.1177/0893318920970542)
+[^workplace-meeting-dialogue]: Cionea, Ioana A.; Kavya, Pavitra; Wyant, Mizuki H. 2020. "Dialogue Orientations in Workplace Meetings". 
+*Management Communication Quarterly*. 35, 2 (11 November 2020): 315–331. [doi:10.1177/0893318920970542](https://sci-hub.se/10.1177/0893318920970542).
 
-[^collective-intelligence]: Woolley, Anita Williams; Chabris, Christopher F.; Pentland, Alex; Hashmi, Nada; Malone, Thomas W. (29 October 2010). "Evidence for a Collective Intelligence Factor in the Performance of Human Groups". Science. 330 (6004): 686–688. [doi:10.1126/science.1193147](https://sci-hub.se/10.1126/science.1193147).
+[^collective-intelligence]: Woolley, Anita Williams; Chabris, Christopher F.; Pentland, Alex; Hashmi, Nada; Malone, Thomas W. 2010. "Evidence for a Collective Intelligence Factor in the Performance of Human Groups". *Science*. 330, 6004 (29 October 2010): 686–688. [doi:10.1126/science.1193147](https://sci-hub.se/10.1126/science.1193147).
