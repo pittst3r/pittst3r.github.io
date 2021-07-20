@@ -27,8 +27,8 @@ jobs:
 
       - name: Publish
         run: |
-          git config --global user.name '${{ github.actor }}'
-          git config --global user.email 'your-username@users.noreply.github.com'
+          git config --global user.name "Robbie Pitts"
+          git config --global user.email "pittst3r@users.noreply.github.com"
           git add dist
           git stash -- dist
           git fetch origin rendered
