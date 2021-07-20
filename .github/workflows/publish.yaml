@@ -22,20 +22,22 @@ jobs:
           command: install
           args: --git https://github.com/pittst3r/distillate.git
 
-      - name: Build
-        run: distillate build
-
       - name: Publish
+        env:
+          DEST_BRANCH: rendered
         run: |
-          git config --global user.name "Robbie Pitts"
-          git config --global user.email "pittst3r@users.noreply.github.com"
-          git add dist
-          git stash -- dist
-          git fetch origin rendered
-          git checkout rendered
+          git config --global user.name $GITHUB_ACTOR
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git checkout --detach
+          git fetch origin $DEST_BRANCH
+          git branch --track --force $DEST_BRANCH origin/$DEST_BRANCH
+          git checkout $DEST_BRANCH -- .
+          git commit -am "Base state"
+          distillate build .
+          git add --all
+          git stash
+          git checkout $DEST_BRANCH
           git stash pop
-          mv dist/* .
-          rm -rf dist
-          git add -A
-          git commit -m "Publish ${{ github.sha }}"
-          git push origin rendered:rendered
+          git add --all
+          git commit --message="Publish ${{ github.sha }}"
+          git push
