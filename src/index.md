@@ -1,6 +1,6 @@
 ## Blog
 
-- 2021-07-13 [Eager Ego](blog/eager-ego.html)
+- 2021-07-13 [Eristic awareness](blog/2021-07-13-eristic-awareness.html)
 
 ## Links
 
