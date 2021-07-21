@@ -1,4 +1,4 @@
-## Eristic awareness
+# Eristic Awareness
 
 *by Robbie Pitts, 2021-07-13*
 

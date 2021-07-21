@@ -1,3 +1,4 @@
 title = "Robbie's Home on the Web"
 heading = "Robbie's Home on the Web"
 copyright = "Robbie Pitts"
+template-path = "src/template.hbs"

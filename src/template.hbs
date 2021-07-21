@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+{{#if page.title}}
+<title>{{page.title}} — {{site.title}}</title>
+{{else}}
+<title>{{site.title}}</title>
+{{/if}}
+
+<style type="text/css">
+    body {
+        margin: auto 2em;
+        font-family: ui-sans-serif, system-ui;
+    }
+    ul {
+        list-style-type: "-  ";
+    }
+    ul, ol {
+        padding: 0;
+        list-style-position: outside;
+    }
+</style>
+</head>
+
+<body>
+{{#unless page.is-home}}<p><a href="/" title="Go to homepage">Home</a></p>{{/unless}}
+{{{page.body}}}
+<hr />
+<p>&copy; {{site.year}} {{site.copyright}}</p>
+</body>
+
+</html>
